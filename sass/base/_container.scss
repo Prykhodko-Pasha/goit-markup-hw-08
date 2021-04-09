@@ -1,0 +1,17 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* outline: 2px solid tomato; */
+
+  .header & {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer & {
+    display: flex;
+    align-items: baseline;
+  }
+}
