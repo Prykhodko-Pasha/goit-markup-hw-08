@@ -31,16 +31,17 @@
   margin-top: -30px;
 }
 
-.flex-four-items-in-row {
-  flex-basis: calc(100% / 4 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
-}
-
-.flex-three-items-in-row {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
+@media screen and (max-width: 767px) {
+  .flex-list__team,
+  .flex-list__features {
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  .flex-list__clients {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
 }
 
 .icon-wrapper {
@@ -86,11 +87,19 @@ img {
 }
 
 .container {
-  width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
   /* outline: 2px solid tomato; */
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 480px;
+  }
+  .footer .container {
+    text-align: center;
+  }
 }
 
 .header .container {
@@ -98,14 +107,16 @@ img {
   align-items: center;
 }
 
-.footer .container {
-  display: flex;
-  align-items: baseline;
-}
-
 section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+@media screen and (max-width: 767px) {
+  section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .form-btn {
@@ -136,16 +147,19 @@ section {
 .logo {
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
   color: var(--active-color);
   letter-spacing: 0.03em;
 }
 
-.header .logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 93px;
+@media screen and (max-width: 767px) {
+  .logo {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+  .header .logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
 
 .logo--dark-text {
@@ -179,20 +193,16 @@ section {
 }
 
 .join {
-  margin-left: 70px;
   width: 206px;
 }
 
-.subscribe {
-  margin-left: auto;
-}
-
-.subs-form {
-  display: flex;
+@media screen and (max-width: 767px) {
+  .join {
+    margin: 60px auto;
+  }
 }
 
 .subs-form__input {
-  width: 358px;
   height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -208,13 +218,16 @@ section {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.subs-form__btn {
-  margin: 0 0 0 12px;
-}
-
 .subs-form__btn svg {
   margin-left: 10px;
   fill: var(--third-color);
+}
+
+@media screen and (max-width: 767px) {
+  .subs-form__input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 .filters {
@@ -253,68 +266,26 @@ section {
   border-bottom: 1px solid #ececec;
 }
 
-.menu, .header-contacts {
-  display: flex;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+.burger {
+  display: none;
 }
 
-.menu__item {
-  color: var(--main-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.menu__item:hover, .menu__item:focus {
-  color: var(--active-color);
-}
-
-.menu__item--active {
-  color: var(--active-color);
-  position: relative;
-}
-
-.menu__item--active::after {
-  content: "";
-  width: 100%;
-  height: 4px;
-  background-color: var(--active-color);
-  border-radius: 2px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
-.menu li:not(:last-child),
-.header-contacts li:not(:last-child) {
-  margin-right: 50px;
-  /* отступы между елементами списков в хедере */
-}
-
-/* ============ header contacts ============ */
-.header-contacts {
-  margin-left: auto;
-  /* придавливаем контакты вправо */
-}
-
-.header-contacts__link {
-  color: var(--secondary-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
-  fill: var(--secondary-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-contacts__link:hover, .header-contacts__link:focus {
-  color: var(--active-color);
-  fill: var(--active-color);
-}
-
-.header-contacts__icon {
-  margin-right: 10px;
+@media screen and (max-width: 767px) {
+  .menu,
+  .header-contacts {
+    display: none;
+  }
+  .burger {
+    display: block;
+    margin-left: auto;
+    padding: 10px 15px 10px 0;
+    border: none;
+    background-color: transparent;
+  }
+  .burger:hover .burger__icon,
+  .burger:focus .burger__icon {
+    fill: var(--active-color);
+  }
 }
 
 .projects__item {
@@ -391,16 +362,6 @@ section {
   color: var(--third-color);
 }
 
-.footer-contacts {
-  font-style: normal;
-  /* убираем курсив */
-  margin-top: 20px;
-}
-
-.footer-contacts li:not(:last-child) {
-  margin-bottom: 9px;
-}
-
 .footer-contacts__address,
 .footer-contacts__link {
   font-size: 14px;
@@ -408,9 +369,14 @@ section {
   letter-spacing: 0.03em;
 }
 
+.footer-contacts {
+  font-style: normal;
+  /* убираем курсив */
+  margin-top: 20px;
+}
+
 .footer-contacts__address {
   color: var(--third-color);
-  margin-bottom: 9px;
 }
 
 .footer-contacts__link {
@@ -420,5 +386,14 @@ section {
 
 .footer-contacts__link:hover, .footer-contacts__link:focus {
   color: var(--active-color);
+}
+
+@media screen and (max-width: 767px) {
+  .footer-contacts li:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  .footer-contacts__address {
+    margin-bottom: 8px;
+  }
 }
 /*# sourceMappingURL=portfolio.css.map */

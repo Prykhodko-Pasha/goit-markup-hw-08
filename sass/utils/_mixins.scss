@@ -1,0 +1,3 @@
+@mixin line-height($lh, $fs) {
+  line-height: calc($lh/$fs);
+}

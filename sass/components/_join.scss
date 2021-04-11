@@ -1,4 +1,10 @@
 .join {
-  margin-left: 70px;
+  // margin-left: 70px;
   width: 206px;
+}
+
+@media screen and (max-width: 767px) {
+  .join {
+    margin: 60px auto;
+  }
 }

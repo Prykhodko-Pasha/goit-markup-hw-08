@@ -1,17 +1,25 @@
 .container {
-  width: 1200px;
+  // width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
   /* outline: 2px solid tomato; */
+
+  @media screen and (max-width: 767px) {
+    max-width: 480px;
+
+    .footer & {
+      text-align: center;
+    }
+  }
 
   .header & {
     display: flex;
     align-items: center;
   }
 
-  .footer & {
-    display: flex;
-    align-items: baseline;
-  }
+  // .footer & {
+  //   display: flex;
+  //   align-items: baseline;
+  // }
 }

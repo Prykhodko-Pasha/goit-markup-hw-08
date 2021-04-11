@@ -1,3 +1,10 @@
+.features__icon {
+  height: 120px;
+  background: var(--light-bg-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
 .features__title {
   font-weight: 700;
   font-size: 14px;
@@ -15,9 +22,12 @@
   color: var(--secondary-color);
 }
 
-.features__icon {
-  height: 120px;
-  background: var(--light-bg-color);
-  border-radius: 4px;
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  // .features__icon:not(:first-child) {
+  //   margin-top: 30px;
+  // }
+
+  .features__title {
+    text-align: center;
+  }
 }
