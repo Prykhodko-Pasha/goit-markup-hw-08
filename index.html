@@ -112,20 +112,29 @@
             <div class="container">
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="flex-list">
-                    <li class="jobs-item flex-three-items-in-row">
-                        <img src="./images/job-example-1.jpg" alt="Разработка десктоп приложений" width="370" height="294">
+                    <li class="jobs-item flex-list__jobs">
+                        <picture>
+                            <source srcset="./images/desktop/job-example-1.jpg 1x, ./images/desktop/job-example-1@2x.jpg 2x">
+                            <img src="./images/desktop/job-example-1.jpg" alt="Разработка десктоп приложений">
+                        </picture>
                         <div class="jobs-item__wrapper">
                             <h3 class="jobs-item__title">Десктопные приложения</h3>
                         </div>
                     </li>
-                    <li class="jobs-item flex-three-items-in-row">
-                        <img src="./images/job-example-2.jpg" alt="Разработка мобильных приложений" width="370" height="294">
+                    <li class="jobs-item flex-list__jobs">
+                        <picture>
+                            <source srcset="./images/desktop/job-example-2.jpg 1x, ./images/desktop/job-example-2@2x.jpg 2x">
+                            <img src="./images/desktop/job-example-2.jpg" alt="Разработка мобильных приложений">
+                        </picture>
                         <div class="jobs-item__wrapper">
                             <h3 class="jobs-item__title">Мобильные приложения</h3>
                         </div>
                     </li>
-                    <li class="jobs-item flex-three-items-in-row">
-                        <img src="./images/job-example-3.jpg" alt="Разработка дизайна приложений" width="370" height="294">
+                    <li class="jobs-item flex-list__jobs">
+                        <picture>
+                            <source srcset="./images/desktop/job-example-3.jpg 1x, ./images/desktop/job-example-3@2x.jpg 2x">
+                            <img src="./images/desktop/job-example-3.jpg" alt="Разработка дизайна приложений">
+                        </picture>
                         <div class="jobs-item__wrapper">
                             <h3 class="jobs-item__title">Дизайнерские решения</h3>
                         </div>
@@ -141,7 +150,11 @@
                 <ul class="flex-list">
                     <li class="team__item flex-list__team">
                         <!-- <img src="./images/our-team-1.jpg" alt="Игорь Демьяненко" width="270" height="260"> -->
-                        <picture class="flex-list__img">
+                        <picture>
+                            <source srcset="./images/desktop/our-team-1.jpg 1x, ./images/desktop/our-team-1@2x.jpg 2x" 
+                            media="(min-width: 1200px)">
+                            <source srcset="./images/tablet/our-team-1.jpg 1x, ./images/tablet/our-team-1@2x.jpg 2x"
+                            media="(min-width: 768px)">
                             <source srcset="./images/mobile/our-team-1.jpg 1x, ./images/mobile/our-team-1@2x.jpg 2x">
                             <img src="./images/mobile/our-team-1.jpg" alt="Игорь Демьяненко">
                         </picture>
@@ -182,7 +195,11 @@
                     </li>
                     
                     <li class="team__item flex-list__team">
-                        <picture class="flex-list__img">
+                        <picture>
+                            <source srcset="./images/desktop/our-team-2.jpg 1x, ./images/desktop/our-team-2@2x.jpg 2x" 
+                            media="(min-width: 1200px)">
+                            <source srcset="./images/tablet/our-team-2.jpg 1x, ./images/tablet/our-team-2@2x.jpg 2x"
+                            media="(min-width: 768px)">
                             <source srcset="./images/mobile/our-team-2.jpg 1x, ./images/mobile/our-team-2@2x.jpg 2x">
                             <img src="./images/mobile/our-team-2.jpg" alt="Ольга Репина">
                         </picture>
@@ -223,7 +240,11 @@
                     </li>
                     
                     <li class="team__item flex-list__team">
-                        <picture class="flex-list__img">
+                        <picture>
+                            <source srcset="./images/desktop/our-team-3.jpg 1x, ./images/desktop/our-team-3@2x.jpg 2x" 
+                            media="(min-width: 1200px)">
+                            <source srcset="./images/tablet/our-team-3.jpg 1x, ./images/tablet/our-team-3@2x.jpg 2x"
+                            media="(min-width: 768px)">
                             <source srcset="./images/mobile/our-team-3.jpg 1x, ./images/mobile/our-team-3@2x.jpg 2x">
                             <img src="./images/mobile/our-team-3.jpg" alt="Николай Тарасов">
                         </picture>
@@ -264,7 +285,11 @@
                     </li>
                     
                     <li class="team__item flex-list__team">
-                        <picture class="flex-list__img">
+                        <picture>
+                            <source srcset="./images/desktop/our-team-4.jpg 1x, ./images/desktop/our-team-4@2x.jpg 2x" 
+                            media="(min-width: 1200px)">
+                            <source srcset="./images/tablet/our-team-4.jpg 1x, ./images/tablet/our-team-4@2x.jpg 2x"
+                            media="(min-width: 768px)">
                             <source srcset="./images/mobile/our-team-4.jpg 1x, ./images/mobile/our-team-4@2x.jpg 2x">
                             <img src="./images/mobile/our-team-4.jpg" alt="Михаил Ермаков">
                         </picture>
@@ -363,8 +388,10 @@
             <div>
                 <a class="logo" href="./index.html" lang="en">Web<span class="logo--light-text">Studio</span></a>
                 <address class="footer-contacts">
-                    <p class="footer-contacts__address">г. Киев, пр-т Леси Украинки, 26</p>
                     <ul>
+                        <li>
+                            <p class="footer-contacts__address">г. Киев, пр-т Леси Украинки, 26</p>
+                        </li>
                         <li>
                             <a class="footer-contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                         </li>

@@ -9,13 +9,14 @@
   border-radius: 0px 0px 4px 4px;
 }
 
+.team__meta {
+  padding-top: 30px;
+  padding-bottom: 24px;
+  width: 206px;
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 767px) {
-  .team__meta {
-    padding-top: 30px;
-    padding-bottom: 24px;
-    width: 206px;
-    margin: 0 auto;
-  }
 }
 
 // .team__meta {

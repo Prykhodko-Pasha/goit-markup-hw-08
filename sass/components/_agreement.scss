@@ -1,4 +1,6 @@
 .agreement {
+  font-size: 12px;
+  line-height: 1.17;
   // font-size: 14px;
   // line-height: 1.71;
   letter-spacing: 0.03em;
@@ -54,7 +56,5 @@
 
 @media screen and (max-width: 767px) {
   .agreement {
-    font-size: 12px;
-    line-height: 1.17;
   }
 }

@@ -1,7 +1,7 @@
 .filters {
-  // display: flex;
+  display: flex;
   // margin-bottom: 50px;
-  // justify-content: center;
+  justify-content: center;
 }
 
 .filters__item:not(:last-child) {
@@ -35,10 +35,17 @@
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .filters {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .filters {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
     margin-top: -15px;
     margin-bottom: 40px;
   }
