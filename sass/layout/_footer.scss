@@ -47,14 +47,7 @@
 }
 
 @media screen and (max-width: 1199px) {
-  
-  // .footer {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   justify-content: center;
-  // }
-
-  // .footer-contacts__address {
-  //   margin-bottom: 8px;
-  // }
+  .footer-contacts li:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }

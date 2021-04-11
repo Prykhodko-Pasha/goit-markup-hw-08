@@ -1,8 +1,6 @@
 .agreement {
   font-size: 12px;
   line-height: 1.17;
-  // font-size: 14px;
-  // line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
   margin: 0 auto 30px;
@@ -54,7 +52,9 @@
   outline: none;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1200px) {
   .agreement {
+    font-size: 14px;
+    line-height: 1.71;
   }
 }

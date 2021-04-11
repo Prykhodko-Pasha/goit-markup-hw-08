@@ -35,6 +35,12 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .filters {
+    margin-bottom: 50px;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .filters {
     margin-bottom: 30px;
