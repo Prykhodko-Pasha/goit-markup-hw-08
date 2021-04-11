@@ -1,6 +1,6 @@
 .agreement {
-  font-size: 14px;
-  line-height: 1.71;
+  // font-size: 14px;
+  // line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
   margin: 0 auto 30px;
@@ -12,6 +12,10 @@
 
 .agreement__text {
   margin-left: 8px;
+
+  & a {
+    text-decoration: underline;
+  }
 }
 
 .check-on {
@@ -46,4 +50,11 @@
 .default-checkbox:focus + .agreement .check-off {
   border-color: var(--active-color);
   outline: none;
+}
+
+@media screen and (max-width: 767px) {
+  .agreement {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
