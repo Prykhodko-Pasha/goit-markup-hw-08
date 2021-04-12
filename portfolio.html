@@ -49,11 +49,57 @@
                     </a>
                 </li>
             </ul>
-            <button class="burger" type="button">
+
+            <button class="burger" type="button" data-menu-button>
                 <svg class="burger__icon" width="40" height="40">
                     <use href="./images/sprite.svg#burger"></use>
                 </svg>
             </button>
+        </div>
+
+        <div class="mob-menu" data-menu>
+            <button class="mob-menu__close-btn" type="button" data-menu-close>
+                <svg width="40" height="40">
+                    <use href="./images/sprite.svg#close"></use>
+                </svg>
+            </button>
+            <ul class="mob-menu__list">
+                <li class="mob-menu__item">
+                    <a class="mob-menu__link" href="./index.html">Студия</a>
+                </li>
+                <li class="mob-menu__item">
+                    <a class="mob-menu__link mob-menu__link--active" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="mob-menu__item">
+                    <a class="mob-menu__link" href="#">Контакты</a>
+                </li>
+            </ul>
+            <ul class="mob-menu__contacts">
+                <li>
+                    <a class="mob-menu__tel" href="tel:+380961111111">
+                        +38 096 111 11 11
+                    </a>
+                </li>
+                <li>
+                    <a class="mob-menu__mail" href="mailto:info@devstudio.com">
+                        info@devstudio.com
+                    </a>
+                </li>
+            </ul>
+            <ul class="mob-socials">
+                <li class="mob-socials__item">
+                    <a href="#">Instagram</a>
+                </li>
+                <li class="mob-socials__item">
+                    <a href="#">Twitter</a>
+                </li>
+                <li class="mob-socials__item">
+                    <a href="#">Facebook</a>
+                </li>
+                <li class="mob-socials__item">
+                    <a href="#">LinkedIn</a>
+                </li>
+            </ul>
         </div>
     </header>
     <main>
@@ -334,5 +380,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/mob-menu.js"></script>
 </body>
 </html>
